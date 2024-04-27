@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fisrt</title>
+</head>
+<style>
+
+body{
+    background-image: url("https://www.technocrazed.com/wp-content/uploads/2015/12/Home-Wallpaper-32.jpg");
+        backdrop-filter: blur(3px);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+}
+.deepak{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sri{
+    padding: 10px 40px;
+    border-radius: 10px;
+    background: transparent;
+    color: rgba(254, 252, 252, 0.861);
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-30%);
+    margin-top: 10px;
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    background: black;
+    color: aliceblue;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+
+
+}
+#roomname{
+    padding: 10px 30px;
+    color: white;
+    background: transparent;
+    border-color: rgb(0, 0, 0);
+
+}
+.response{
+    box-shadow: inset;
+    padding: 40px 120px  ;
+    background: transparent;
+    position: absolute;
+    top: 70%;
+}
+</style>
+<body>
+ <form method="POST" action="/enter">
+    <div>
+
+    </div>
+            <div class="deepak">
+                <input type="text" name="roomname" id="roomname" placeholder="enter your room name" required>
+            </div>
+            <div>
+             <button class="sri" type="submit">Enter Room</button>
+            </div>
+
+
+        </form>
+        <a href="/createdb">create your room</a>
+      <div class="response">
+        {{ss}}
+        {{ss1}}
+      </div>
+
+</body>
+</html>

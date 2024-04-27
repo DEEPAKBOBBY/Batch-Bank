@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>history</title>
+</head>
+<body>
+        <h1>HISTORY</h1>
+    <ul>
+        {% for rec in res %}
+            <li>
+                <strong>Username:</strong> {{ rec[0] }}<br>
+                <strong>Description:</strong> {{ rec[1] }}<br>
+                <strong>Date:</strong> {{ rec[2] }}<br>
+                <strong>Amount:</strong> {{ rec[3] }}<br>
+            </li>
+            <hr/>
+        {% endfor %}
+    </ul>
+<a href="/spliting">Split expenses?</a>
+</body>
+</html>

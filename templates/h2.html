@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2ndpage</title>
+</head>
+<style>
+    body{
+        background-image: url("https://images.pexels.com/photos/2035406/pexels-photo-2035406.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+        backdrop-filter: blur(5px);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+         background-size: cover; /* Ensure the background covers the entire viewport */
+         background-attachment: fixed;
+    }
+
+
+    #databasen{
+        padding: 10px 40px;
+        background:lightgray;
+        border-radius: 10px;
+        border-color: rgb(109, 15, 15);
+    }
+
+    a{
+        text-decoration: none;
+       position: absolute;
+       top: 30px;
+       right: 30px;
+       padding: 10px;
+       background: black;
+       color: aliceblue;
+
+    }
+    .a{
+        position:absolute;
+        top: 100px;
+    }
+    .b{
+        position:absolute;
+        top: 130px;
+    }
+    .c{
+        position:absolute;
+        top: 160px;
+    }
+    .d{
+        position:absolute;
+        top: 190px;
+    }
+    .sri{
+        background: rgb(255, 255, 255);
+        border: none;
+        border-radius: 10px;
+        padding: 10px 40px;
+        cursor: pointer;
+    }
+    .sri:hover{
+        cursor: pointer;
+        color: blue;
+    }
+</style>
+<body>
+
+ <form method="POST" action="/createdb">
+            <div class="deepak">
+                <input type="text" name="databasen" id="databasen" placeholder="enter your room name for creation" required>
+
+            <button class="sri" type="submit">Submit</button>
+            </div>
+
+
+        </form>
+
+        <a href="/">enter into room</a>
+        <div class="a">
+            {{cs1}}
+        </div>
+        <div class="b">{{cs2}}</div>
+        <div class="c">{{cs3}}</div>
+        <div class="d">{{es}} </div>
+
+
+</body>
+</html>
